@@ -1,7 +1,7 @@
-# AngularJs in a .net world
+# Betclic is betting on AngularJs
 
 ## Presentation
-
+Betclic is betting on AngularJs
 AngularJs in a .net world
 
 

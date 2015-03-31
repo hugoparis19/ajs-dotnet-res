@@ -2,167 +2,187 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
-	<title>AngularJs in a .Net world</title>
+    <title>AngularJs in a .Net world</title>
 
-	<meta name="description" content="Betclic is betting on AngularJs">
-	<meta name="author" content="Hugo">
+    <meta name="description" content="Betclic is betting on AngularJs">
+    <meta name="author" content="Hugo">
 
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-	<!-- Code syntax highlighting -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement( 'link' );
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName( 'head' )[0].appendChild( link );
-	</script>
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 
-		<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
 
-
-				<section>
-					<h2>Great news ! (02/2014)</h2>
-					<p class="fragment">Business want to fully rebuild the webapps</p>
-					<p class="fragment">AngularJs become more and more popular, we try it, it looks awesome !</p>
-					<p class="fragment">
-						<img style="width: 500px;height:400px" data-src="ressources\AZHg72Z.gif">
-					</p>
-				</section>
-
-				<section>
-					<section>
-						<h2>What do we have to do ?</h2>
-						<p class="fragment">exactly</p>
-						<div class="fragment">
-							<p>betclic sport .fr</p>
-							<img data-src="ressources\oldwebappbetclicfr.JPG">
-						</div>						
-					</section>
-					<section>
-						<p>betclic casino .com</p>
-						<img data-src="ressources\oldwebappcasino.JPG">
-					</section>
-					<section>
-						<p>betclic turf .fr</p>
-						<img data-src="ressources\oldwebappturf.JPG">
-					</section>
-					<section>
-						<p>expekt casino</p>
-						<img data-src="ressources\oldwebappcasinoExpekt.JPG">
-					</section>
-					<section>
-						<p>expekt sport</p>
-						<p class="fragment">betclic sport .com</p>
-						<p class="fragment">betclic sport .it</p>
-						<p class="fragment">montecarlo casino</p>						
-					</section>
-					<section>
-						<p>...more than 15? webapps</p>
-						<p class="fragment roll-in">4 universes</p>
-						<p class="fragment roll-in">3 brands</p>
-						<p class="fragment roll-in">Ios & Droid apps using webviews</p>
-						<p class="fragment roll-in"><font color="#FF0000">10000 single users per days, 30000 bets per days</font></p>
-						<p class="fragment roll-in">... must confess not so good with Javascript</p>
-						<!-- <p class="fragment"><img style="width: 500px;height:400px" data-src="ressources\troppeur.gif"></p> -->
-					</section>
-					<section>
-						<img style="width: 600px;height:400px"  data-src="ressources\cparti.gif">
-					</section>
-				</section>
-
-				<section data-background-color="rgba( 22, 152, 213, 0.6 )">
-					<h1 style="width: 100%; margin-top: -20px;" >AngularJs in a .Net world</h1>
-					<p style="margin-top: -20px;">Betclic is betting on AngularJs</p>
-					<p style="margin-top: -20px;">
-						<small>Created by <a href="">Hugo Mercier</a> / <a href="">Antoine Sauvinet</a></small>
-					</p>
-					<img style="margin-top: -20px;" data-src="ressources\powerrangersangularmvc.png">
-				</section>
-
-				
-
-				<section>
-					<h2>Target</h2>
-					<p class="fragment">Multi-tenant : same package per universe for all brands</p>
-					<p class="fragment">No Duplicate code</p>
-					<p class="fragment">Unit test & Integration test</p>
-					<p class="fragment roll-in">The business wants webapps with same functionnality and look and feel as the apps</p>
-				</section>
-
-				<section>
-					<h2>Team to learn</h2>
-					<img style="width: 600px;height:400px"  data-src="ressources\ancient_kung_fu_master_pai_mei.jpg">
-				</section>
-
-				<section>
-					<h2>Mob programming</h2>
-					<img style="width: 500px;height:300px; margin-top: -20px;"  data-src="ressources\20140805_114110.jpg" >
-					<div style="margin-top: -20px;">
-						<p class="fragment">Fix a goal : a real user story</p>
-						<p class="fragment">Prepare a detailed script</p>
-						<p class="fragment">Play the script in front of the team</p>
-						<p class="fragment">The team play the script, by switching keyboard every 10 minutes</p>
-						
-					</div>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>The code is ours</h2>
-					<p class="fragment">Write our own coding conventions</p>
-					<div class="fragment">
-						<div><a href="http://fr.slideshare.net/betclicTech/angularjs-best-practices">Write our best practices</a></div>
-						
-						<iframe src="https://www.slideshare.net/slideshow/embed_code/38442605" width="512" height="420" style="border:" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
-					</div>
-				</section>
-
-				<section>
-					<h2><b>Let's talk</b></h2>
-					<h2><b>architetcure</b></h2>
-				</section>  
-
-				<section>
-					<img data-src="ressources\archi3.png">
-				</section>
+        	<section>
+        		<h2>...</h2>
+        	</section>
 
 
 
-				<section>
-					<section>
-					<h2><b>What is the job of the MVC webapp ?</b></h2>
-					<p class="fragment">not only serve our angular app but also inject dynamic javascript</p>
-					</section>
-					<section>
-						<div>
-							<p>analyze the incoming request :</p>
-							<p class="fragment">https://m.betclic.com/sport/</p>
-						</div>
-						<div class="fragment">
-							<p>inject token & context in a constant service</p>
-							<pre>
+            <section>
+                <h2>Great news ! (02/2014)</h2>
+                <p class="fragment">Business wants to fully rebuild the webapps</p>
+                <p class="fragment">AngularJs is becoming more and more popular, we try it, it looks awesome!</p>
+                <p class="fragment">
+                    <img style="width: 500px;height:400px" data-src="ressources\AZHg72Z.gif">
+                </p>
+            </section>
+
+            <section>
+                <section>
+                    <h2>What do we have to do?</h2>
+                    <p class="fragment">...exactly</p>
+                    <div class="fragment">
+                        <p>betclic sport .fr</p>
+                        <img data-src="ressources\oldwebappbetclicfr.JPG">
+                    </div>
+                </section>
+                <section>
+                    <p>betclic casino .com</p>
+                    <img data-src="ressources\oldwebappcasino.JPG">
+                </section>
+                <section>
+                    <p>betclic turf .fr</p>
+                    <img data-src="ressources\oldwebappturf.JPG">
+                </section>
+                <section>
+                    <p>expekt casino .com</p>
+                    <img data-src="ressources\oldwebappcasinoExpekt.JPG">
+                </section>
+                <section>
+                    <p>expekt sport .com</p>
+                    <p class="fragment">betclic sport .com</p>
+                    <p class="fragment">betclic sport .it</p>
+                    <p class="fragment">montecarlo casino .com</p>
+                </section>
+                <section>
+                    <p>...more than 15 webapps</p>
+                    <p class="fragment roll-in">4 universes</p>
+                    <p class="fragment roll-in">3 brands</p>
+                    <p class="fragment roll-in">Ios & Droid apps using webviews</p>
+                    <p class="fragment roll-in">
+                        <font color="#FF0000">100 000 single users per month, 3 000 000 bets per month</font>
+                    </p>
+                    <p class="fragment roll-in">... must confess not so good with Javascript</p>
+                    <!-- <p class="fragment"><img style="width: 500px;height:400px" data-src="ressources\troppeur.gif"></p> -->
+                </section>
+                <section>
+                    <img style="width: 600px;height:400px" data-src="ressources\cparti.gif">
+                </section>
+            </section>
+
+            <section data-background-color="rgba( 22, 152, 213, 0.6 )">
+                <h1 style="width: auto; height: auto;">Betclic is betting on AngularJs</h1>
+                <h3 >AngularJs in a .Net world</h3>
+                <p >
+                    by Hugo Mercier -- <a href="https://twitter.com/HugoM321">@HugoM321</a>
+                    <br />
+                    &amp; Antoine Sauvinet -- <a href="https://twitter.com/oinant">@oinant</a>
+                </p>
+                <img data-src="ressources\powerrangersangularmvc.png" style="height:200px; width: auto;">
+            </section>
+
+
+
+            <section>
+                <h2>Target</h2>
+                <p class="fragment">Multi-tenant: same package per universe for all brands</p>
+                <p class="fragment">No Duplicated code</p>
+                <p class="fragment">Unit tests &amp; Integration tests</p>
+                <p class="fragment roll-in">The business wants webapps with same functionnalies and look and feel as the native apps</p>
+            </section>
+
+            <section>
+                <h2>Team: Time to learn</h2>
+                <img style="width: 600px;height:400px" data-src="ressources\ancient_kung_fu_master_pai_mei.jpg">
+            </section>
+
+            <section>
+                <h2>Mob programming</h2>
+                <img style="width: 500px;height:300px; margin-top: -20px;" data-src="ressources\20140805_114110.jpg">
+                <div style="margin-top: -20px;">
+                    <p class="fragment">One Team, one screen, one keyboard</p>
+                    <p class="fragment">Fix a goal: a real user story</p>
+                    <p class="fragment">Prepare a detailed dojo and play it in front of the team</p>
+                    <p class="fragment">The team replays it and switches keyboard every 10min</p>
+
+                </div>
+            </section>
+
+            <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                <h2>The code is ours</h2>
+                <p class="fragment">Write our own coding conventions</p>
+                <div class="fragment">
+                    <div><a href="http://fr.slideshare.net/betclicTech/angularjs-best-practices">Write our best practices</a>
+                    </div>
+
+                    <iframe src="https://www.slideshare.net/slideshow/embed_code/38442605" width="512" height="420" style="border:" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+                </div>
+            </section>
+
+            <section>
+                <h2><b>Let's talk</b></h2>
+                <h2><b>architecture</b></h2>
+            </section>
+
+            <section>
+                <img data-src="ressources\archisportok.jpg">
+            </section>
+
+            <section>
+                <section>
+                    <h2><b>the WebApi</b></h2>
+                    <p class="fragment">full C#</p>
+                    <p class="fragment">not a lot of code to write: just an optimized presentation layer</p>
+                    <p class="fragment">shared core used on web front</p>
+                </section>
+            </section>
+
+
+            <section>
+                <section>
+                    <h2><b>What's the job of the MVC webapp?</b></h2>
+                    <div class="fragment">
+                    	<p>It's just one HomeController with one action</p>
+                    	<p>not only serve our angular app but also injects dynamic javascript</p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>analyzes the incoming request:</p>
+                        <p class="fragment">https://m.betclic.com/sport/</p>
+                    </div>
+                    <div class="fragment">
+                        <p>injects token &amp; context in a constant service</p>
+                        <pre>
 								<code data-trim contenteditable>window.contextToken = "eyJ0eXA..";
 angular.module('global').constant('appContext', {
 	"channelId":"BetclicMobile",
@@ -173,51 +193,64 @@ angular.module('global').constant('appContext', {
 })();
 								</code>
 							</pre>
-						</div>
-					</section>
-					<section>
-					<div>
-						<p>bootstrap constants from config file and database</p>
-						<pre><code data-trim contenteditable>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>bootstraps constants from config file and database</p>
+                        <pre><code data-trim contenteditable>
 							angular.module("sport.core").constant("sportInitialData", {
 	sportWebApiUrl:"https://webapi/url",
 	iconsSportUrl:"https://cdn/url",
 	...
 });						</code></pre>
-					</div>
-					</section>
-					<section>
-					<div>
-						<p>choose the corresponding bundle</p>
-						<pre><code data-trim contenteditable>
-							script src="/sport/build/mon_bundle_betclic_com.js?v=15.010.1.262652"
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>chooses the corresponding bundle</p>
+                         
+                        <pre><div>https://m.betclic.com/sport/</div>
+                        <code data-trim contenteditable>
+							script src="/sport/build/mon_bundle_betclic_com.js?v=15.010"
 						</code></pre>
-					</div>
-					</section>
-				</section>
-			
-				<section>
-					<section>
-						<h2>yes we're Multi-tenant !</h2>
-						<p class="fragment">Thanks to our gulp build  chain</p>
-					</section>
-					<section>
-						<h2>Easy to override</h2>
-						<div class="fragment">
-							<font color="#FF0000">
-								<p>for example this is my default directive :</p>
-								<p>mySuperDirective.js</p>
-							</font>
-							
-						</div>
-						<div class="fragment">
-							<font color="#00FFFF">and this is the custom directive for .fr :</font>
-							<font color="#00FFFF">fr.mySuperDirective.js</font>
-						</div>						
-					</section>
-					<section>
-						<p>In gulp config file, we describe our differents applications :</p>
-						<pre>
+                        <pre class="fragment">
+						Or
+						<div>https://m.betclic.fr/sport/</div>
+						<code data-trim contenteditable>script src="/sport/build/mon_bundle_betclic_fr.js?v=15.010"</code>
+						</pre>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>It means we need to build one bundle/app per brand!</h2>
+                    <p class="fragment">Thanks to our gulp build chain
+                        <img data-src="ressources\biggulphuge.jpg">
+                    </p>
+
+                </section>
+                <section>
+                    <h2>Easy to override</h2>
+                    <div class="fragment">
+                        <font color="#FF0000">
+                            for example this is my default directive:
+                        </font>
+                        <font color="#FFA000">
+                            <b>mySuperDirective.js</b>
+                        </font>
+
+                    </div>
+                    <div class="fragment">
+                        <font color="#00AFFF">and this is the custom directive for .fr:</font>
+                        <font color="#00FFFF">
+                        <b>fr.mySuperDirective.js</b></font>
+                    </div>
+                </section>
+                <section>
+                    <p>In gulp config file, we describe our different applications:</p>
+                    <pre>
 								<code data-trim contenteditable>applications: [
 {
     name: 'BetclicCom',
@@ -229,25 +262,24 @@ angular.module('global').constant('appContext', {
 },
 {
     name: 'ExpektCom',
-    code: 'expekt'
+    code: 'expektCom'
 }]
 								</code>
 							</pre>
-					</section>
+                </section>
 
-					<section>
-						<p>so for each applications :</p>
-						<pre>
+                <section>
+                    <p>so for each applications:</p>
+                    <pre>
 								<code data-trim contenteditable>config.applications.forEach(function (application) {
     var taskName = application.code + '_scripts';
     gulp.task(taskName, function () {
-        tools.log("Creating custom javascript for " + application.code);
-
-        return gulp.src(tools.GetFilesFilteredByApplicationCode(...))
+        
+        return gulp.src(tools.GetFilesFilteredByApplicationCode(..))
 
             .pipe($.if(configBuild.minify, $.uglify()))
 
-            .pipe($.concat('app' + application.code + '.js'))
+            .pipe($.concat('app_' + application.code + '.js'))
 
             .pipe(gulp.dest(config.paths.build));
 
@@ -255,153 +287,283 @@ angular.module('global').constant('appContext', {
     scriptsTasks.push(taskName);
 });</code>
 							</pre>
-						<br/>
-						<p class="fragment" style="margin-top: -50px;">method "GetFilesFilteredByApplicationCode" will do the magic</p>
-					</section>
+                    <br/>
+                    <p class="fragment" style="margin-top: -50px;">method "GetFilesFilteredByApplicationCode" will do the magic</p>
+                </section>
 
-					
 
-					<section>
-						<p>so in the build folder, we get :</p>
-						<div class="fragment roll-in">
-							<p>appcom.js</p>
-							<p>appfr.js</p>
-							<p>appexpekt.js</p>
-						</div>
-						<br/>
-						<p class="fragment">same for templates !</p>
-					</section>
+
+                <section>
+                    <p>so in the build folder, we have:</p>
+                    <div class="fragment roll-in">
+                        <p>app_com.js</p>
+                        <p>app_fr.js</p>
+                        <p>app_expektCom.js</p>
+                    </div>
+                    <br/>
+                    <p class="fragment">same for templates!</p>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Global</h2>
+                    <img src="ressources\glo-wat.jpg">
+                </section>
+                <section>
+                    <h2>Global</h2>
+                    <p>Common infrastructure:</p>
+                    <ul>
+                        <li>Shared directives</li>
+                        <li>Client Auth management</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Global</h2>
+                    <p>Transversal features</p>
+                    <ul>
+                        <li>Login</li>
+                        <li>Registration</li>
+                        <li>Payment</li>
+                        <li>Marketing</li>
+                        <li>Customer account</li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="ressources\FullArchi-3.png">
+                </section>
+                <section>
+                    <h2>Global</h2>
+                    <p class="fragment">Universe apps are loosely coupled to common feature,</p>
+                    <p class="fragment">but still tightly coupled to the Infrastructure changes!</p>
+                </section>
+                <section>
+                    <h2>Global</h2>
+                    <p>Our approach is very pragmatic</p>
+                    <p>As many entreprise-grade applications, we made some trade-off regarding the purity of our application</p>
+                    <div  class="fragment">
+                    	<p>For instance, the payment domain is really complex and business-critical</p>
+                    </div>
+                    <div  class="fragment">
+                        <img src="ressources\youdontsay.jpg">
+                    </div>
+                </section>
+                 <section>
+                    <h2>Global - Payments</h2>
+                    <p>The decision was to integrate our existing web-cashier directly int the web-app, through an iframe integration</p>
+                    <p class="fragment">To do so, we simply added some mobile-designed razor views, </p>
+                    <div class="fragment">
+                        <p>update the view-engine,</p>
+                        <pre>
+							<code data-trim contenteditable>DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("mobile")
+{
+     ContextCondition = IsFromMobileWebApp())
+});
+							</code>
+						</pre>
+                    </div>
+
+                    <p class="fragment">cutsomize a bit our SSO and...</p>
+                </section>
+                <section>
+                    <img src="ressources\freemobilecashier.jpg">
+                </section>
+            </section>
+
+            <section>
+            	<section>
+	                <h2>Translations</h2>
+	                <p class="fragment">
+	                	Betclic is present in 21 languages. 
+	                	We obvioulsy rely on a CMS, built a long-time ago...
+	                </p>
+	                <p class="fragment">
+	                	Our webapps have to support different languages, and for performance purpose, we couldn't afford to preload all the needed ressources
+	                </p>
 				</section>
+	            <section>
+	            	<p>We built our client side language management over the awesome <a href="https://github.com/angular-translate">angular-translate</a> module, wich handles batching ressources fecthing, local-storage persistance</p>
+	            	<div class="fragment">
+	            		<p>Each universe is responsible for registering its own languageProvider: </p>
+	            		<pre>
+							<code data-trim contenteditable>
+angular.module('sport.helpers')
+       .factory('translationProvider', translationProvider);
+translationProvider.$inject = ['translationSvc']; // Restangular ressource
+function translationProvider(translationSvc) {
+    return {  
+    	universe: 'sport', 
+    	load: function () { return translationSvc.getTranslations(); } 
+    }
+} 
+							</code>
+						</pre>
+	            	</div>
+            	</section>
+            	<section>
+	            	<p>
+	            		Then the global module loads and puts everything in cache: 
+	            	</p>      
+					<div class="fragment">
+	            		<pre>
+							<code data-trim contenteditable>
+function checkGlobal(languageCode) {
+    return $http.get(envContext.globalApi + 'translation'); // global resource
+}
 
-				<section>
-					<h2>Global</h2>
-				</section>
+function checkUniverse(languageCode) {
+    var provider = $injector.get('translationProvider');
+    return provider.load();
+}					
+							</code>
+						</pre>      	
+ 					</div>
+	            </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Working with Visual Studio</h2>
+                    <img src="ressources\SR2hUhQN_400x400.png">
+                </section>
+                <section>
+                    <h2>sidewaffle</h2>
+                    <a href="http://sidewaffle.com/">http://sidewaffle.com/</a>
+                    <p>Templates for Visual Studio by John Papa</p>
+                    <img src="ressources\screenshotsidewaffle.png">
+                </section>
+                <section>
+                    <h2>JSON-Intellisense</h2>
+                    <a href="https://github.com/madskristensen/JSON-Intellisense">https://github.com/madskristensen/JSON-Intellisense</a>
+                    <p>NPM and Bower package Intellisense directly Visual Studio JSON editor</p>
+                    <img src="ressources\completion-version.png">
+                    <img src="ressources\tooltip-light.png">
+                </section>
+                <section>
+                    <h2>Task Runner Explorer</h2>
+                    <a href="https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708">https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708</a>
+                    <p>A task runner for Grunt and Gulp directly within Visual Studio</p>
+                    <img src="ressources\console.png">
+                    <img src="ressources\bindings.png">
+                </section>
+                <section>
+                    <h2>IntelliSense for AngularJS in Visual Studio</h2>
+                    <a href="https://github.com/jmbledsoe/angularjs-visualstudio-intellisense/">https://github.com/jmbledsoe/angularjs-visualstudio-intellisense/</a>
+                    <p>Intellisense in JavaScript files for injected AngularJS components in Visual Studio.</p>
+                    <img src="ressources\4456.Intellisenseexperiencewithouttheextension_thumb_5755D6FA.png">
+                </section>
+            </section>
 
-				<section>
-					<h2>Translations</h2>
-				</section>
+            <section>
+                <section>
+                    <h2>Let's go to prod!</h2>
+                </section>
+                <section>
+                    <h2>@Indus team: "Can you please install node.js on TFS build server"</h2>
+                    <img data-src="ressources\ibleCMh7xe8t38.gif">
+                </section>
+                <section>
+                    <h2>How to use gulp in Microsoft build?</h2>
+                    <br/>
+                    <div class="fragment">
+                        <p>Custom nuget package with node,npm and git standalone version</p>
+                        <a href="https://www.nuget.org/packages/Betclic.BuildTools.Node/1.0.0">https://www.nuget.org/packages/Betclic.BuildTools.Node/1.0.0</a>
+                    </div>
+                    <p class="fragment">Post build Event: npm install, bower install, gulp tasks</p>
+                </section>
+            </section>
 
-				<section>
-					<section>
-						<h2>Working with Visual Studio</h2>
-						<img src="ressources\SR2hUhQN_400x400.png">
-					</section>
-					<section>
-						<h2 >sidewaffle</h2>
-						<a href="http://sidewaffle.com/">http://sidewaffle.com/</a>
-						<p>Templates for Visual Studio by John Papa</p>
-						<img src="ressources\screenshotsidewaffle.png">
-					</section>
-					<section>
-						<h2>JSON-Intellisense</h2>
-						<a href="https://github.com/madskristensen/JSON-Intellisense">https://github.com/madskristensen/JSON-Intellisense</a>
-						<p>NPM and Bower package Intellisense directly in the Visual Studio JSON editor</p>
-						<img src="ressources\completion-version.png">
-						<img src="ressources\tooltip-light.png">
-					</section>
-					<section>
-						<h2>Task Runner Explorer</h2>
-						<a href="https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708">https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708</a>
-						<p>A task runner for Grunt and Gulp directly within Visual Studio</p>
-						<img src="ressources\console.png">
-						<img src="ressources\bindings.png">
-					</section>
-					<section>
-						<h2>IntelliSense for AngularJS in Visual Studio</h2>
-						<a href="https://github.com/jmbledsoe/angularjs-visualstudio-intellisense/">https://github.com/jmbledsoe/angularjs-visualstudio-intellisense/</a>
-						<p>intellisense in JavaScript files for injected AngularJS components in Visual Studio.</p>
-						<img src="ressources\4456.Intellisenseexperiencewithouttheextension_thumb_5755D6FA.png">
-					</section>										
-				</section>
-				
-				<section>
-					<section>
-						<h2>Let's go to prod !</h2>
-					</section>
-					<section>
-						<h2>@Indus team : "Can you please install node.js on TFS build server"</h2>
-						<img data-src="ressources\ibleCMh7xe8t38.gif">
-					</section>
-					<section>
-						<h2>How to use gulp in Microsoft build ?</h2>
-						<br/>
-						<div class="fragment">
-							<p>Custom nuget package with node,npm and git standalone version</p>
-							<a href="https://www.nuget.org/packages/Betclic.BuildTools.Node/1.0.0">https://www.nuget.org/packages/Betclic.BuildTools.Node/1.0.0</a>
-						</div>
-						<p class="fragment">Post build Event: npm install, bower install, gulp tasks</p>
-					</section>
-				</section>
+            <section>
+                <img data-src="ressources\ionic-logo-white.svg">
+                <h2 class="fragment">why not ?</h2>
+                <div>
+                	<div class="fragment">
+                		<p>First weeks: all good :)</p>
+                		<p>we have the look and feel of native app</p>
+                	</div>
+                    
+                    <p class="fragment">But too much limitations</p>
+                    <p class="fragment">« It’s for app, not webapp »: Ionic team</p>
+                    <p class="fragment">Browser compatibility (IE …)</p>
+                    <p class="fragment">Integration team unhappy</p>
+                </div>
+            </section>
+            <section>
+                <img style="width: 900px;height:700px" data-src="ressources\chientriste.gif">
+            </section>
 
-				<section>
-					<img data-src="ressources\ionic-logo-white.svg">
-					<h2 class="fragment">why not ?</h2>
-					<div>
-						<p class="fragment">First weeks : all good :)</p>
-						<p class="fragment">But too much limitations</p>
-						<p class="fragment">« It’s for app, not webapp » : Ionic team</p>
-						<p class="fragment">Browser compatibility (IE …)</p>
-						<p class="fragment">Integration team unhappy</p>
-					</div>
-				</section>
-				<section>
-					<img style="width: 900px;height:700px" data-src="ressources\chientriste.gif">
-				</section>
+            <section>
+                <h2>So if you are a front .net dev</h2>
+                <p style="margin-top: -20px;" class="fragment">don't be afraid to use AngularJs !</p>
+                <img style="margin-top: -20px;" class="fragment" data-src="ressources\e7aa179812b8978caa94cbfb85db22ac.jpg">
+            </section>
 
-				<section>
-					<h2>So if you are a front .net dev</h2>
-					<p style="margin-top: -20px;" class="fragment" >don't be afraid to use AngularJs !</p>
-					<img style="margin-top: -20px;" class="fragment" data-src="ressources\e7aa179812b8978caa94cbfb85db22ac.jpg">
-				</section>
-
-
-
-
-
-
-
-
-
-
-
-
+             <section>
+                <h1>THANKS!</h1>
+                <img style="margin-top: -20px;" class="fragment" data-src="ressources\thanks.jpg">
+            </section>
 
 
 
 
 
 
-				<!-- end -->
 
-			</div>
 
-			<script src="lib/js/head.min.js"></script>
-			<script src="js/reveal.js"></script>
 
-			<script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+            <!-- end -->
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+        </div>
 
-				// Optional reveal.js plugins
-				dependencies: [
-				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-				{ src: 'plugin/zoom-js/zoom.js', async: true },
-				{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
 
-		</script>
+        <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
 
-	</body>
-	</html>
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }]
+        });
+        </script>
+
+</body>
+
+</html>
